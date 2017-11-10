@@ -1,6 +1,6 @@
 [![Docker Repository on Quay](https://quay.io/repository/wehouse/movie-reviews-sentiment-analyzer/status "Docker Repository on Quay")](https://quay.io/repository/wehouse/movie-reviews-sentiment-analyzer)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Heroku](http://heroku-badge.herokuapp.com/?app=wehouse-sentiment-analyzer&root=naive_bayes)]
+[![Heroku](http://heroku-badge.herokuapp.com/?app=wehouse-sentiment-analyzer&root=naive_bayes&style=flat&svg=1)]
 
 
 
