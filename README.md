@@ -1,3 +1,4 @@
+[![Docker Repository on Quay](https://quay.io/repository/wehouse/movie-reviews-sentiment-analyzer/status "Docker Repository on Quay")](https://quay.io/repository/wehouse/movie-reviews-sentiment-analyzer)
 # Movie Reviews Sentiment Analyzer
 
 ## Introduction
@@ -33,6 +34,25 @@ Confusion matrix yielded
 | 1  	| 67  	| 133  	|
 
 This translates into accuracy of correctly predicting test values by 296/400 ~ %75
+
+
+## How to deploy and run?
+### From Code
+Install requirements from requirements.txt via 
+```
+pip install -r requirements.txt
+```
+Afterwards
+```
+gunicorn app:api
+```
+Port 8000 u will have it launched that will only address 127.0.0.1 requests and can be accessed using the postman collection in repo.
+
+### From Docker
+Docker image is provided via Quay, its launch instructions are here:
+[Container Registry](https://quay.io/repository/wehouse/movie-reviews-sentiment-analyzer?tab=settings)
+
+postman collection in repo again will be the primary way to use it.
 
 ## References
 1. This data was first used in Bo Pang and Lillian Lee,
