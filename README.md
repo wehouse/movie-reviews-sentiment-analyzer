@@ -1,4 +1,7 @@
 [![Docker Repository on Quay](https://quay.io/repository/wehouse/movie-reviews-sentiment-analyzer/status "Docker Repository on Quay")](https://quay.io/repository/wehouse/movie-reviews-sentiment-analyzer)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+
 # Movie Reviews Sentiment Analyzer
 
 ## Introduction
