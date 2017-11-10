@@ -9,7 +9,6 @@ import pandas as pd
 from numpy import array
 
 # Importing the dataset
-#training_dataset = pd.read_csv('train.tsv', delimiter = '\t', quoting = 3)
 data=[]
 filepath = "txt_sentoken/pos/*.txt"
 txt = glob.glob(filepath)
@@ -68,6 +67,10 @@ from sklearn.naive_bayes import GaussianNB
 classifier = GaussianNB()
 classifier.fit(X_train, y_train)
 
+import pickle
+
+pickle.dump(classifier, open( "naive_bayes_model.p", "wb" ) )
+pickle.dump(cv,open( "count_vectorizer.p", "wb" ) )
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)

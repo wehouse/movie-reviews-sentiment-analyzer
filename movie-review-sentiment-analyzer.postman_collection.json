@@ -1,0 +1,38 @@
+{
+	"info": {
+		"name": "movie-review-sentiment-analyzer",
+		"_postman_id": "84026937-9dc6-4858-6219-ac917fba9aa8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/naive_bayes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "the american action film has been slowly drowning to death in a sea of asian wire-fu copycats . \nit's not a pretty death , and it's leaving the likes of schwartznager , stallone , and van damme wearing cement galoshes at the bottom of a kung fu sea . \nsometimes , the mix results in a mind-blowing spectacle unlike any other . \nquality action with amazing and exciting stunt work , as in 1999's the matrix , can be a real gem . \nbut too often hollywood gets it wrong , even when they pay off chinese directors . \nflying ninjas and floating karate masters have been replaced by soaring bronx detectives and slow motion kicking scientists . \nmostly it's laughable . \nin hollywood's rush to emulate the success of the matrix , trademark asian stunt choreography has become more of a joke than an art form . \nbut iron monkey , the latest asian import , shows us how to get it right . \niron monkey ( actually a reissue of a 1993 film ) is the story of a 19th chinese vigilante ( rongguang yu ) , fighting with his own unique style of shaolin kung fu for the rights of the oppressed and the bellies of the hungry . \nbut it is also a piece of the narrative of legendary chinese film hero wong fei-hong , most recently seen in one of the most overlooked , and possibly best films of 2000 , drunken master 2 ( released in the u . s . as the legend of drunken master ) . \nunlike drunken master 2 , which stars jackie chan as an adult fei-hong , iron monkey finds a much younger fei-hong ( sze-man tsang ) and his father wong kei-ying ( yen chi dan ) thrust into the middle of iron monkey's fight against oppression . \niron monkey succeeds as no kung fu film since drunken master 2 . at times , fighting styles , especially that of monkey himself , do devolve into the ridiculous twinkle-toed floating of films like crouching tiger , hidden dragon , director yuen wo ping eventually remembers to bring his action scenes back to earth . \niron monkey is at its heart a hardcore , kung fu action film rather than any kind of drama a la crouching tiger . \nhowever , there are brief moments of profoundness shared between characters , such as those that pass between our outlaw hero and his good-hearted but misguided enemy , chief fox . \nin those moments , and in others , iron monkey manages to transcend its mindless kung fu nature to touch the hearts and minds of its audience . \nwhile in no way the equal of a masterpiece like drunken master 2 , iron monkey dances quite nicely to the invading kung fu tune . \naka siunin wong fei-hung tsi titmalau . \n"
+				},
+				"url": {
+					"raw": "localhost:8000/naive_bayes",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"naive_bayes"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
