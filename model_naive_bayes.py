@@ -67,14 +67,23 @@ from sklearn.naive_bayes import GaussianNB
 classifier = GaussianNB()
 classifier.fit(X_train, y_train)
 
-import pickle
-
-pickle.dump(classifier, open( "naive_bayes_model.p", "wb" ) )
-pickle.dump(cv,open( "count_vectorizer.p", "wb" ) )
-
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
 
 # Making the Confusion Matrix
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
+
+# Applying k-fold cross-validation
+from sklearn.model_selection import cross_val_score
+accuracies = cross_val_score(estimator=classifier, X=X_train, y=y_train, cv=10)
+print(accuracies.mean())
+print(accuracies.std())
+
+import pickle
+
+pickle.dump(classifier, open( "naive_bayes_model.p", "wb" ) )
+pickle.dump(cv,open( "count_vectorizer.p", "wb" ) )
+
+
+

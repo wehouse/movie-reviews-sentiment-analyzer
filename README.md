@@ -28,7 +28,9 @@ In order of implementation, we used the following models:
 
 ## Results
 In order to compare results of multiple models, we will be using the standard confusion matrix in order to evaluate test vs pred
-accuracy. We will introduce other techniques of comparison in time.
+accuracy. 
+
+In order to enhance our understanding of the models in terms of Bias, we will be using K-fold cross validation.
 
 ### Naive Bayes Classifier
 Confusion matrix yielded
@@ -40,6 +42,8 @@ Confusion matrix yielded
 
 This translates into accuracy of correctly predicting test values by 296/400 ~ %75
 
+10-fold cross validation accuracy resulted in %70.5 with a standard deviation of %3.54, this indicates that we have a 
+* HIGH bias (low accuracy, underfitting most likely) and LOW variance (good generalization, not suffering from overfitting)
 
 ## How to deploy and run?
 ### From Code
