@@ -74,6 +74,14 @@ y_pred = classifier.predict(X_test)
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 
+#Metrics to look for
+from sklearn.metrics import roc_auc_score, precision_score, recall_score, accuracy_score, f1_score
+print(cm)
+print(accuracy_score(y_test, y_pred))
+print(precision_score(y_test,y_pred, pos_label='1'))
+print(recall_score(y_test, y_pred, pos_label='1'))
+print(f1_score(y_true, y_pred, average='weighted'))
+
 # Applying k-fold cross-validation
 from sklearn.model_selection import cross_val_score
 accuracies = cross_val_score(estimator=classifier, X=X_train, y=y_train, cv=10)
