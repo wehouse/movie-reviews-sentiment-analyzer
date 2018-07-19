@@ -32,8 +32,6 @@ in particular how to program computers to process and analyze large amounts of n
 
 ## How to interpret results?
 
-**Accuracy: %67**
-
 Is this model any good?
 
 ---
@@ -45,7 +43,11 @@ Is this model any good?
 | 0  	| 159  	| 41  	|
 | 1  	| 91  	| 109  	|
 
+**Accuracy: %67**
 
-## Accuracy, precision and recall results
+---
+
+## F1, precision and recall results
 * Precision: 0.726667
 * Recall: 0.545
+* F1: 0.67

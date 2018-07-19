@@ -80,7 +80,7 @@ print(cm)
 print(accuracy_score(y_test, y_pred))
 print(precision_score(y_test,y_pred, pos_label='1'))
 print(recall_score(y_test, y_pred, pos_label='1'))
-print(f1_score(y_true, y_pred, average='weighted'))
+print(f1_score(y_test, y_pred, average='weighted'))
 
 # Applying k-fold cross-validation
 from sklearn.model_selection import cross_val_score
